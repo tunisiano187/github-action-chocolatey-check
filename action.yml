@@ -9,7 +9,7 @@ inputs:
     description: 'The main folder where the packages folders are'
     required: false
     default: "./automatic/"
-runs:
-  runs-on: windows-latest
-  run:
-      - ${{ inputs.folder }}
+using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.folder }}
