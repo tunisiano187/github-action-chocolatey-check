@@ -8,6 +8,7 @@ inputs:
   folder:
     description: 'The main folder where the packages folders are'
     required: false
+    default: "./automatic/"
 runs:
   runs-on: windows-latest
   run:
