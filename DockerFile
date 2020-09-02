@@ -1,0 +1,5 @@
+FROM mcr.microsoft.com/windows/servercore
+
+COPY start.ps1 /
+
+ENTRYPOINT [ "powershell.exe", "C:\\start.ps1" ]

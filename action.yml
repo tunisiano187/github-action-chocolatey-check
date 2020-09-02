@@ -1,0 +1,14 @@
+name: 'github-action-chocolatey-check'
+description: '(Unofficial) Check packages in a github for common errors'
+author: 'tunisiano187'
+branding:
+  icon: terminal
+  color: blue
+inputs:
+  folder:
+    description: 'The main folder where the packages folders are'
+    required: false
+runs:
+  runs-on: windows-latest
+  run:
+      - ${{ inputs.folder }}
