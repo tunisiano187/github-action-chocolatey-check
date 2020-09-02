@@ -1,5 +1,5 @@
-FROM mcr.microsoft.com/windows/servercore
+FROM ubuntu-latest
 
-COPY start.ps1 /
+COPY entrypoint.sh /
 
-ENTRYPOINT [ "powershell.exe", "C:\\start.ps1" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
